@@ -36,6 +36,7 @@ namespace Kevupton\LaravelCoinpayments\Models;
  * @property mixed qrcode_url
  * @property mixed created_at
  * @property mixed updated_at
+  * @property mixed dest_tag
  */
 class Transaction extends Model
 {
@@ -44,6 +45,6 @@ class Transaction extends Model
         'buyer_email', 'buyer_name', 'item_name', 'item_number',
         'invoice', 'custom', 'ipn_url', 'txn_id', 'fee',
         'confirms_needed', 'timeout', 'status_url', 'qrcode_url',
-        'received_amount', 'received_confirms', 'status', 'status_text'
+        'received_amount', 'received_confirms', 'status', 'status_text','dest_tag'
     ];
 }
